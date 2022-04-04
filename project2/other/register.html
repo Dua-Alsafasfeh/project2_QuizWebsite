@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register page </title>
+
+</head>
+
+<body>
+    <nav>
+        <h1 class="h1nav"><span class="spnav">Q</span>uiz</h1>
+    </nav>
+    <div class=" maind">
+    <h2 class="enter1">Registration Form </h2>
+
+<form action="main1.html" id="regform">
+    <table  class="table" cellspacing="25">
+        <tr>
+            <td class="enter">Enter User-Name :</td>
+            <td class="input"><input type="text" placeholder="Enter User Name" id="Enter_Name"  class="tb" >
+
+            <div> <span id="spanerror">
+              <p class="erros" id="errorFN"></p> <td>
+        
+        </div>
+
+        </tr>
+
+      
+
+        <tr>
+            <td class="enter">Enter Email ID :</td>
+            <td class="input" ><input type="text" placeholder="Enter Email ID here" id="Enter_Email" class="tb" >
+                <div>   <p class="erros" id="errorFN2"></p>  </td>
+                
+                </div>
+        
+        </tr>
+
+        <tr>
+            <td class="enter" >Enter your birthday :</td>
+            <td class="input" > <input type="date" name="bday" id="bday" class="tb">
+                <div> 
+                    <p class="erros" id="errorFN3"></p> </span>  </td>
+                
+                </div>
+        
+        <tr>
+            <td class="enter">Enter Password :</td>
+            <td class="input"><input type="password" placeholder="Enter Password here" id="Enter_Password" class="tb" >
+                <div> 
+                      <p class="erros" id="errorFN4"></p>   </td>
+                
+                </div>
+        
+        </tr>
+        <tr>
+            <td class="enter">Enter Confirm Password :</td>
+            <td class="input" ><input type="password" placeholder="Confirm  Password " id="Confirm_Password" class="tb"  >
+                <div>
+                    <p class="erros" id="errorFN5"></p></td>
+                
+                </div>
+        
+            </td>
+        </tr>
+        <tr>
+            <td class="enter" >Position</td>
+            <td>
+                <select name="position" id="position"class="tb">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <div class="erros" id="errorpos"> </div>
+                </select>
+            </td>
+        </tr>
+        <tr >
+            <td  >
+                
+          <input  class="register" type="submit" value="Register" class="btn" id="submit" >
+            </td>
+        </tr>
+    </table>
+    </form>
+</div>
+</body>
+<SCript src="register.js"></SCript>
+</html>

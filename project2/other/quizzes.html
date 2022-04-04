@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizzes.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav>
+        <h1 class="h1nav"><span class="spnav">Q</span>uiz</h1>
+    </nav>
+
+    <div class="quiz">
+        <div  class="qhead" style="position: relative;">
+            <div class="timer" id="timer" style="position: absolute; right: 0; margin-right: 30px;">10 : 00</div>
+            <div id="qhead" >Position Topic</div>
+            
+        </div>
+        
+        <div class="question" id="question">Question 1?</div>
+        <div class="choice" id="choice"></div>
+        <div class="footer">
+            <form action="result.html" id="myform"></form>
+            <div class="progresscon">
+                <progress id="progress" value="0" max="10"></progress>
+            </div>
+            <div class="endfooter">
+                <div class="counters">
+                    <div class="qnum" id="qnum">Q1 / 10</div>
+                    
+                </div>
+                <div class="butt">
+                    <button id="button">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quizzes.js"></script>
+</body>
+</html>

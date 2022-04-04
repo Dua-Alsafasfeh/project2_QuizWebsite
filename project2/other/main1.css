@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+nav{
+    background-color: #34495E;
+    border: 1px solid #34495E;
+}
+.h1nav{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #7AC9FF;
+    margin: 18px;
+    font-family: 'Yeseva One', cursive;
+}
+.spnav{
+    color: #F1C40F;
+}
+/*....................*/
+.main1ch{
+    width: 70%;
+}
+.main1{
+    background-image:url(./images/a7.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    flex: 2;
+    padding: 2em;
+}
+.h1main{
+    color:#2C3377 ;
+}
+.pmain{
+    color:#2C3377;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 2em;
+}
+.btn{
+    width: 50%;
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    font-size: 18px;
+    padding: 10px 3em;
+    padding-bottom: 8px;
+    color: #2C3377;
+    background-color: white;
+    border-radius: 10px;
+}
+.btn1{
+    cursor: pointer;
+    color: #048cfc;
+    border: 2px solid #048cfc;
+}
+.btn1:hover{
+    color: #05595B;
+    font-weight: bold;
+    font-style: italic;
+    border-color: #05595B;
+}
+.btn2{
+background-color:#F1C40F ;
+color: white;
+cursor: pointer;
+border: 0;
+}
+.btn2:hover{
+    background-color: #05595B;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*................................*/
+
+.main2ch{
+    width: 70%;
+}
+.main2header{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    text-align: center;
+    color:#2C3377 ;
+    font-style: italic;
+}
+.main2{
+    background-image:url(./images/a7.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    flex: 2;
+    padding: 2em;
+    display: none;
+}
+.fa-circle-question{
+    font-size: 6em;
+    color: #008891;
+}
+
+.div2{
+    display: flex;
+    justify-content: space-between;
+}
+.div2 h2,h3{
+    color: #2C3377;
+    font-size: 1.5em;
+}
+.skilldiv{
+    margin: 1.5em;
+    line-height:1.5em ;
+}
+.main2 i{
+    font-size:2em ; 
+    margin: .5em;
+    color:#0093AB;
+}
+.div2 span{
+    color:#2C3377 ;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+.btnstartparent{
+    width: 80%;
+    text-align: center;
+}
+.btnstartquiz{
+    background-color:#008891 ;
+    font-size: 18px;
+    padding: 10px 3em;
+    padding-bottom: 8px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 2em;
+    cursor: pointer;
+    border: 0;
+}
+.btnstartquiz:hover{
+    background-color: white;
+    color:#008891 ;
+    border: 1px solid #008891;
+}
+
+/*.................................*/
+
+footer{
+    background-color: #34495E;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5em;
+}
+.h2quiz{
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+    color:#7AC9FF ;
+}
+.h2footer{
+    color: #7AC9FF;
+    text-align: center;
+    
+}
+.footer li{
+    color: white;
+}
+.footer a{
+    margin:3px;
+    font-size:2em;
+    margin-bottom: .5em;
+    margin-right: .25em;
+    text-decoration: none;
+}
+.fa-linkedin-in{
+    color:white;
+   
+    max-height: fit-content;
+}
+.fa-facebook-f{
+    color:white;
+
+}
+.fa-twitter{
+    color:white;
+    
+}
+
+/***************************************************************************/
+
+.pop{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(23 23 23 / 84%);
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    border: 2px solid #34496C;
+    padding: 37px 20px;
+    padding-bottom: 10px;
+    background-color: #3498DB;
+    position: relative;
+    color: white;
+    width: 335px;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.loghead{
+    padding: 5px 15px;
+    border: 2px solid #34496C;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border-radius: 2px;
+    background-color: #34496C;
+}
+
+.close{
+    padding: 5px 10px;
+    border: 2px solid #34496C;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(410%, 50%);
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button{
+    display: block;
+    color: white;
+    background-color: #34496C;
+    padding: 11px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px auto;
+    margin-bottom: 0;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: #3560a9;
+}
+
+.d1, .d2{
+    margin: 23px 0;
+    display: flex;
+    justify-content: space-between;
+}
+/* ..................................media query.................. */
+@media ( max-width:1050px ){
+    .btn{ width: 100%;}
+}
+@media ( max-width:850px ){
+    .main1ch{font-size: small; width: 55%;}
+}
+@media ( max-width:690px ){
+    .btn
+}

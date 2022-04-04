@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    background-color: #e2eff0;
+}
+
+
+nav{
+    background-color: #34495E;
+    border: 1px solid #34495E;
+}
+
+.h1nav{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #7AC9FF;
+    margin: 18px;
+}
+
+.spnav{
+    color: #F1C40F;
+}
+
+.quiz{
+    width: 70%;
+    margin: 50px auto;
+    box-shadow: 5px 5px 3px 1px rgba(84, 84, 84, 0.557);
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.qhead{
+    border-radius: 5px 5px 0 0;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #34495E;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.question{
+    padding: 20px 30px;
+    background-color: #e0e0e0;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.chcontainer{
+    padding: 20px 30px;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.chcontainer:nth-child(1){
+    border-top: 1px solid rgb(77, 77, 77);
+}
+
+.chcontainer:hover{
+    background-color: #e7e7e7;
+}
+
+.radioout{
+    border: 2px solid black;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.radioin{
+    background-color: #215fa7;
+    padding: 10px;
+    border-radius: 100%;
+    display: none;
+}
+
+.progresscon{
+    text-align: center;
+    background-color: #666666;
+    margin: 5px 0;
+}
+
+.answer{
+    display: inline-block;
+    font-size: 22px;
+    margin: 0;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+progress{
+    width: 98%;
+    margin: 5px auto;
+}
+
+.endfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 30px;
+    font-size: 23px;
+    font-family: sans-serif;
+}
+
+.counters{
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qnum{
+    display: inline-block;
+}
+
+.timer{
+    display: inline-block;
+}
+
+button{
+    font-size: 18px;
+    padding: 10px 15px;
+    padding-bottom: 8px;
+    color: white;
+    background-color: #34495E;
+    border: 0;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #38628b;
+}

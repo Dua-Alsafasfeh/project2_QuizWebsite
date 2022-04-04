@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: #00C897;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.head{
+    color: white;
+    font-family: sans-serif;
+    font-size: 33px;
+    text-align: center;
+    padding: 42px 30px;
+}
+
+.qlist{
+    background-color: white;
+    height: 70%;
+}
+
+.listbody{
+    height: 80%;
+    overflow-y: scroll;
+
+}
+
+.listhead{
+    background-color: #EEEEEE;
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 20%;
+}
+
+.qt,.qf{
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 10px 30px;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.qt{
+    background-color: #00C897;
+}
+
+.qt:hover{
+    background-color: #00e7ad;
+}
+
+.qt:active{
+    background-color: unset;
+    border: 1.4px solid #00e7ad;
+    color: #00e7ad;
+}
+
+.qf{
+    background-color: #B91646;
+}
+
+.qf:hover{
+    background-color: #d71b54;
+}
+
+.qf:active{
+    background-color: unset;
+    border: 1px solid #B91646;
+    color: #B91646;
+}
+
+.quiz{
+    width: 70%;
+    margin: 50px auto;
+    box-shadow: 5px 5px 3px 1px rgba(84, 84, 84, 0.557);
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.question{
+    padding: 20px 30px;
+    background-color: #e0e0e0;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.chcontainer{
+    padding: 20px 30px;
+    border-bottom: 1px solid rgb(77, 77, 77);
+    display: flex;
+    align-items: center;
+    user-select: none;
+    /* cursor: pointer; */
+}
+
+.radioout{
+    border: 2px solid black;
+    padding: 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+.radioin{
+    background-color: #61b1e6;
+    padding: 10px;
+    border-radius: 100%;
+    display: none;
+}
+
+.answer{
+    display: inline-block;
+    font-size: 22px;
+    margin: 0;
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+button{
+    font-size: 18px;
+    padding: 15px 25px;
+    color: white;
+    background-color: #34495E;
+    border: 0;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+button:hover{
+    background-color: #38628b;
+}
