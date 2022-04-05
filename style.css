@@ -27,7 +27,7 @@ nav{
     width: 70%;
 }
 .main1{
-    background-image:url(./images/a7.jpg);
+    background-image:url(other/images/a7.jpg);
     background-repeat: no-repeat;
     background-position: right;
     flex: 2;
@@ -95,7 +95,7 @@ border: 0;
     font-style: italic;
 }
 .main2{
-    background-image:url(./images/a7.jpg);
+    background-image:url(other/images/a7.jpg);
     background-repeat: no-repeat;
     background-position: right;
     flex: 2;
@@ -113,11 +113,14 @@ border: 0;
 }
 .div2 h2,h3{
     color: #2C3377;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 .skilldiv{
     margin: 1.5em;
     line-height:1.5em ;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 .main2 i{
     font-size:2em ; 
@@ -247,6 +250,7 @@ footer{
 }
 
 .button{
+    text-align: center;
     display: block;
     color: white;
     background-color: #34496C;
@@ -257,7 +261,6 @@ footer{
     margin-bottom: 0;
     margin-top: 20px;
     cursor: pointer;
-    text-align: center;
 }
 
 .button:hover{
@@ -269,13 +272,15 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-/* ..................................media query.................. */
-@media ( max-width:1050px ){
-    .btn{ width: 100%;}
+
+#erroruser{
+    display: none;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.518);
+    padding: 5px;
+    
 }
-@media ( max-width:850px ){
-    .main1ch{font-size: small; width: 55%;}
-}
-@media ( max-width:690px ){
-    .btn{}
+
+#position{
+    font-size: 1em;
 }

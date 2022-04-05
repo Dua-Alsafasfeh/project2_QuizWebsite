@@ -44,7 +44,6 @@ let chosen = JSON.parse(localStorage.chosen),
                 chcontainer.style.backgroundColor = "rgb(56 178 149 / 50%)";
             }else{
                 chcontainer.style.backgroundColor = "#c637609c";
-
             }
         }
 
@@ -135,6 +134,10 @@ let chosen = JSON.parse(localStorage.chosen),
 
             e++;
         }
+    }
+
+    document.getElementById("logout").onclick = function(){
+        location.href = "../index.html";
     }
 
 //background-color: rgb(56 178 149 / 50%);

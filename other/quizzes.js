@@ -1,4 +1,4 @@
-let position = "JAVASCRIPT", 
+let position = localStorage.usrpos, 
     pos,
     quiz = [
         [

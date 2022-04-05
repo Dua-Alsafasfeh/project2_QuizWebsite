@@ -5,30 +5,33 @@ let callarr = [];
 
 let username;
 let email;
+let cem;
 let bdate;
 let pass;			
 let cpass;
 let position=document.getElementById("position").value;
+localStorage.data;
 if(localStorage.data != undefined){
     callfromlocalstorage();
 }
 
-function register_constructor(username,email,bdate,pass, position){//////constructor
+function register_constructor(username,email,bdate,pass, position,cem){//////constructor
 this.username=username;
 this.email=email;
+this.cem=cem;
 this.bdate=bdate;
 this.pass=pass;
 this.position=position;
 
-if(this.username && this.email && this.pass &&this.position ){
-    callarr.push(this);
-storeInlocalStorage(); 
-location.href="main1.html";
-}
 
 // registerarray.push(this);
-// callarr.push(this);
-// storeInlocalStorage();
+if(this.username && this.email && this.pass &&this.position && this.cem ){
+    callarr.push(this);
+storeInlocalStorage(); 
+location.href="../index.html";
+}
+
+
 }
 
 
@@ -38,13 +41,14 @@ registerform.addEventListener("submit",function(event){
 
     username= document.getElementById("Enter_Name").value;
     email= document.getElementById("Enter_Email").value;
+    cem= document.getElementById("Enter_cEmail").value;
     bdate=document.getElementById("bday").value;
     pass= document.getElementById("Enter_Password").value;			
     cpass= document.getElementById("Confirm_Password").value;
     position=document.getElementById("position").value;
 
-     new register_constructor(username,email,bdate,pass, position);
-    //  location.href="main1.html";
+     new register_constructor(username,email,bdate,pass, position,cem);
+    
      
 });
 
@@ -103,7 +107,43 @@ registerform.addEventListener("submit",function(event){
     document.getElementById("Enter_Email").onblur= function (){
         emailvalidate();    
    }
-  
+  //////////////////////////ce/////////////////////////////
+
+  function cemvalidate()
+         {
+          
+            cem= document.getElementById("Enter_cEmail").value;
+      
+
+     if (cem=='')
+      {
+      document.getElementById("errorFN6").innerHTML=
+     ` <i class="fa-solid fa-circle-exclamation"></i>`+"Please enter  Confirm Email";  
+    }
+      else if (email!= cem)
+        {
+            document.getElementById("errorFN6").innerHTML=
+            `<i class="fa-solid fa-circle-exclamation"></i>`+"Email not Matched";
+
+        }
+       
+      
+    else {
+        document.getElementById("errorFN6").innerHTML="";
+    } 
+}
+
+    document.getElementById("Enter_cEmail").onchange = function ()
+    {
+        cemvalidate();  
+  }
+   document.getElementById("Enter_cEmail").onblur= function ()
+   {
+
+    cemvalidate();    
+  }
+
+
     //////////////////////////////pass//////////////////
     function passvalidate() {
    
@@ -199,11 +239,6 @@ registerform.addEventListener("submit",function(event){
      
 ////////////////////////submit////////////////////////////////////////
 
-    // document.getElementById("submit").onclick=function(){
-    //     storeInlocalStorage();
-    //     // location.href="main1.html ";
-    // //    document.getElementById("regform").su;
-    // }
 function storeInlocalStorage(){
     
     localStorage.setItem("data",JSON.stringify(callarr));
@@ -219,4 +254,17 @@ function callfromlocalstorage(){
       callarr.push(JSON.parse(localStorage.getItem("data"))[i]);
       console.log(callarr);
   }
+}
+
+/////////////////responsive//////////////////
+
+
+if(window.innerWidth < 814){
+    document.getElementById("row1").appendChild(document.getElementById("enter1"));
+    document.getElementById("row2").appendChild(document.getElementById("enter2"));
+    document.getElementById("row3").appendChild(document.getElementById("enter3"));
+    document.getElementById("row4").appendChild(document.getElementById("enter4"));
+    document.getElementById("row5").appendChild(document.getElementById("enter5"));
+    document.getElementById("row6").appendChild(document.getElementById("enter6"));
+ 
 }

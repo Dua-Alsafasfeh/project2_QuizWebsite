@@ -1,6 +1,6 @@
 # Project2 - Quiz WebSite
 ## Group Members  {**Duaa Alsafasfeh**, **Majd AL-Balawneh**, **Bahaa Al-deen**}
-![Markdown Logo](other/images/download.jpg)
+![Markdown Logo](./other/images/download.jpg)
 
 [Go to Live Link!](https://dua-alsafasfeh.github.io/project2_QuizWebsite/)
 
@@ -40,3 +40,5 @@ We have created a Quiz website, so when someone applies for a position, this exa
 
 1. Live Code
    * [Live Link](https://dua-alsafasfeh.github.io/project2_QuizWebsite/)
+
+   <a href='https://archiveprogram.github.com/'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif' width='40' height='40'></a> 

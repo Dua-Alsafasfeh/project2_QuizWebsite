@@ -8,32 +8,18 @@ nav{
     text-align: center;
     font-size: 2.5rem;
     color: #7AC9FF;
-    margin: 18px;
+    margin: .5em;
 }
 
 .spnav{
     color: #F1C40F;
 }
 
-input{
-    padding: 5px;
-}
-
-.qhead{
-    border-radius: 5px 5px 0 0;
-    font-size: 25px;
-    font-family: sans-serif;
-    font-weight: bold;
-    background-color: #34495E;
-    color: white;
-    text-align: center;
-    padding: 20px 15px;
-}
 .enter{
     color:#2068af;
-    font-size: 22px;
+    font-size: 1.4em;
 }
-.enter1{
+.entermain{
     color:#2068af;
     text-align: center;
     font-size: 2rem;
@@ -61,13 +47,13 @@ margin: auto;
 
 
 #position{
-    width: 100%;
+    width: 80%;
     height: 100%;
     /* border-radius: 3%; */
 }
 
 .tb{
-    font-size: 20px;  
+    font-size: 1rem;  
 }
 .register{
   cursor: pointer;
@@ -76,17 +62,39 @@ margin: auto;
     background-color: #2068af;
     border-radius: .5rem;
     color: #eceae4;
-    padding: 8px 20px;
+    padding: .3em .5em;
 }
 
 #bday{
-    width: 80%;
-} 
+    width: 75%;
+}
+
+ 
+ .input {
+  /* color: rgb(246, 10, 10); */
+  position: relative;
+  /* right: .4rem;
+  margin-left: 3%;
+  size: 9em; */
+ }
+ 
  .input div{
-     color: rgb(239, 8, 8);
-  size: 19em;
+     color: rgb(245, 13, 13);
+ 
  }
 
+ /* .error{
+    position:absolute;
+    margin: 5em;
+    size: 3em;
+} */
 #errorFN4{
     width: 265px;
+}
+
+.erros{
+    position: absolute;
+    margin: 0;
+    margin-top: 3px;
+    /* top: 100%; */
 }
