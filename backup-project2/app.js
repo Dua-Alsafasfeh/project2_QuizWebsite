@@ -26,12 +26,12 @@ if(localStorage.data != undefined){
         for(let i=0; i < arrobj.length; i++){
             console.log("i: "+i);
             console.log("arrobj.length: "+arrobj.length);
-            if ((arrobj[i].first + " " + arrobj[i].last) == document.getElementById("name").value){
+            if (arrobj[i].username == document.getElementById("name").value){
                 if(arrobj[i].pass == document.getElementById("password").value){
                  document.getElementById("main1").style.display="none";
                  document.getElementById("main2").style.display="block";
                  document.getElementById("pop").style.display="none";
-                 document.getElementById("welcome").textContent=(arrobj[i].first + " " + arrobj[i].last);
+                 document.getElementById("welcome").textContent=arrobj[i].username;
                  document.getElementById("position").textContent = arrobj[i].position;
                  document.getElementById("erroruser").style.display = "none";
                  localStorage.usrpos = arrobj[i].position;

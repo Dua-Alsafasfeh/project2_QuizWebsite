@@ -1,100 +1,90 @@
+body{
+    margin: 0;
+    background-color: #7AC9FF;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 nav{
-    /* padding: 10px; */
     background-color: #34495E;
     border: 1px solid #34495E;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: fit-content;
+    background-color: rgb(52, 73, 94);
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 35%;
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .h1nav{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #7AC9FF;
-    margin: .5em;
+    margin: 18px;
 }
 
 .spnav{
     color: #F1C40F;
 }
 
-.enter{
-    color:#2068af;
-    font-size: 1.4em;
-}
-.entermain{
-    color:#2068af;
-    text-align: center;
-    font-size: 2rem;
-}
-.maind{
-padding-left: 15%;
-}
-#Enter_Name{
-    color: #5b28d3;
-}
-
-
-
-body{
-    margin: 0;
-}
-.maind{
-
-    /* margin: 50px auto; */
-    width: 70%;
-}
 .table{
-margin: auto;
+    width: fit-content;
+    margin: auto;
+    font-size: 19px;
+    background-color: #deb50e;
+    color: white;
+    padding: 25px;
+    padding-bottom: 10px;
+    border-radius: 5px;
 }
 
-
-#position{
-    width: 80%;
-    height: 100%;
-    /* border-radius: 3%; */
+.label{
+    margin-right: 5px;
+    display: inline-block;
 }
 
-.tb{
-    font-size: 1rem;  
-}
-.register{
-  cursor: pointer;
-    font-size: 1.2rem;
-    margin-left: 80%;
-    background-color: #2068af;
-    border-radius: .5rem;
-    color: #eceae4;
-    padding: .3em .5em;
+.label, input{
+    font-family: sans-serif;
 }
 
-#bday{
-    width: 75%;
+input{
+    padding: 5px;
 }
 
- 
- .input {
-  /* color: rgb(246, 10, 10); */
-  position: relative;
-  /* right: .4rem;
-  margin-left: 3%;
-  size: 9em; */
- }
- 
- .input div{
-     color: rgb(245, 13, 13);
- 
- }
-
- /* .error{
-    position:absolute;
-    margin: 5em;
-    size: 3em;
+/* .lalabel, .input{
+    margin-bottom: 10px;
+    display: inline-block;
 } */
-#errorFN4{
-    width: 265px;
+
+.date{
+    width: 97%;
 }
 
-.erros{
-    position: absolute;
-    margin: 0;
-    margin-top: 3px;
-    /* top: 100%; */
+.pos{
+    width: 100%;
+}
+
+tr{
+    margin-bottom: 10px;
+}
+
+
+.error{
+    /* display: none; */
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.518);
+    padding: 7px 12px;
+    max-width: 394px;
 }

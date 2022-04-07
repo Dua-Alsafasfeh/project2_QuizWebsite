@@ -18,12 +18,12 @@ let chosen = JSON.parse(localStorage.chosen),
     }
 
     if(count >= 5){
-        document.getElementById("head").textContent = "Pass: " + count+"0%";
+        document.getElementById("head").textContent = "Pass";
         document.getElementById("head").style.backgroundColor = "#00C897";
         document.body.style.backgroundColor = "#00C897";
 
     }else{
-        document.getElementById("head").textContent = "Fail: " + count+"%";
+        document.getElementById("head").textContent = "Fail";
         document.getElementById("head").style.backgroundColor = "#d71b54";
         document.body.style.backgroundColor = "#d71b54";
 
@@ -34,8 +34,6 @@ let chosen = JSON.parse(localStorage.chosen),
         chcontainer = document.createElement("div");
         chcontainer.setAttribute("class", "chcontainer");
         document.getElementById("choice").appendChild(chcontainer);
-
-        // document.getElementById("pop").appendChild(document.getElementById("qlist"));
 
         if((i-1) == correct[0]){
             chcontainer.style.backgroundColor = "rgb(56 178 149 / 50%)";
@@ -144,8 +142,3 @@ let chosen = JSON.parse(localStorage.chosen),
 
 //background-color: rgb(56 178 149 / 50%);
 //background-color: #c637609c;
-
-document.getElementById("btns").onclick = function(){
-    document.getElementById("qlist").style.display = "block";
-    document.getElementById("btns").style.display = "none";
-}
