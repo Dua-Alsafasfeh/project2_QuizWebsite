@@ -38,7 +38,6 @@ nav{
     flex: 2;
     padding: 2em;
     height: 100%;
-    display: none;
 }
 .h1main{
     color:#2C3377 ;
@@ -120,7 +119,7 @@ border: 0;
     background-position: right;
     flex: 2;
     padding: 2em;
-    /* display: none; */
+    display: none;
 }
 .fa-circle-question{
     font-size: 6em;
@@ -399,7 +398,7 @@ footer{
 @media (max-width:621px){
     .div1 h1{ margin-left: 3em;}
     .btnstartparent{ width:100%}
-    .btnstartquiz{ font-size: 1.2em;}
+    .btnstartquiz{ font-size: 1.2em; margin-top: 1em;}
 }
 @media (max-width:511px){
     .btnstartquiz{ font-size: 1.1em;}
