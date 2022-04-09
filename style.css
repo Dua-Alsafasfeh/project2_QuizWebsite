@@ -22,7 +22,7 @@ nav{
 .spnav{
     color: #F1C40F;
 }
-/*....................*/
+/*...........................main1.................*/
 .main1ch{
     width: 70%;
     margin: 0 auto;
@@ -37,8 +37,8 @@ nav{
     background-position: right;
     flex: 2;
     padding: 2em;
-
     height: 100%;
+    display: none;
 }
 .h1main{
     color:#2C3377 ;
@@ -90,16 +90,13 @@ border: 0;
     font-style: italic;
 }
 
-/*................................*/
+/*.........................main2..................*/
 
 .main2ch{
     width: 70%;
     margin: auto;
 }
 .main2header{
-    /* width: 50%; */
-    /* display: flex; */
-    /* justify-content: space-between; */
     text-align: center;
 }
 .div1{
@@ -107,7 +104,6 @@ border: 0;
     color:#2C3377 ;
     font-style: italic;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     position: relative;
 }
@@ -124,7 +120,7 @@ border: 0;
     background-position: right;
     flex: 2;
     padding: 2em;
-    display: none;
+    /* display: none; */
 }
 .fa-circle-question{
     font-size: 6em;
@@ -133,22 +129,18 @@ border: 0;
 
 .div2{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 3em;
     font-family: sans-serif;
 }
 .div2 h2,h3{
     color: #2C3377;
-    /* font-size: 1.5em; */
 }
 .skilldiv{
-    /* margin: 1.5em; */
     line-height:1.8em ;
-    width: 50%;
+    width: 90%;
     margin: 0;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 .main2 i{
     font-size:2em ; 
@@ -167,12 +159,12 @@ border: 0;
 }
 .btnstartquiz{
     background-color:#008891 ;
-    font-size: 18px;
-    padding: 10px 3em;
+    font-size: 1.5em;
+    padding: 10px 2em;
     padding-bottom: 8px;
     color: white;
     border-radius: 10px;
-    margin-top: 2em;
+    margin-left: 15em;
     cursor: pointer;
     border: 0;
 }
@@ -182,7 +174,7 @@ border: 0;
     border: 1px solid #008891;
 }
 
-/*.................................*/
+/*.........................................................*/
 
 footer{
     background-color: #34495E;
@@ -206,13 +198,6 @@ footer{
 .footer li{
     color: white;
 }
-/* .footer a{
-    margin:3px;
-    font-size:2em;
-    margin-bottom: .5em;
-    margin-right: .25em;
-    text-decoration: none;
-} */
 .fa-linkedin-in{
     color:white;
    
@@ -340,6 +325,7 @@ footer{
     margin-left: 10%;
 }
 /* ..............................media Query.................. */
+/* *****************main1************ */
 @media (max-width:1313px){
     .main1ch{ margin:inherit;}
 }
@@ -390,6 +376,43 @@ footer{
 }
 @media (max-width:300px){
     .h2quiz{margin-left: 1em;}
+}
+/* ********************main2***************** */
+@media (max-width:1190px){
+    .btnstartquiz{ margin-left: 20%;}
+}
+@media (max-width:1000px){
+    .skilldiv{ width: 80%}
+}
+@media (max-width:850px){
+    .main2{ background-image: none; background-color: #F7E2E2; }
+    .main2ch{ width: auto;}
+    .skilldiv{ width: 100%;} 
+    .btnstartquiz{ margin-left: 15em;}
+}
+@media (max-width:760px){
+    .btnstartquiz{ font-size: 1.4em;}
+}
+@media (max-width:716px){
+    .btnstartquiz{ font-size: 1.2em;}
+}
+@media (max-width:621px){
+    .div1 h1{ margin-left: 3em;}
+    .btnstartparent{ width:100%}
+    .btnstartquiz{ font-size: 1.2em;}
+}
+@media (max-width:511px){
+    .btnstartquiz{ font-size: 1.1em;}
+}
+@media (max-width:474px){
+    .btnstartquiz{ font-size: 1em;}
+}
+@media (max-width:437px){
+    .btnstartquiz{ margin: auto;}
+}
+@media (max-width:389px){
+    .btnstartquiz{ margin: auto;}
+    .div2 ,.footer{ font-size: smaller;}
 }
 
 
