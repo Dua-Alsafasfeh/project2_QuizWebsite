@@ -32,7 +32,9 @@ nav{
     text-align: center;
     font-size: 2rem;
     color: #7AC9FF;
-    margin: 18px;
+    margin: 1.4rem;      
+    /* 18px      */
+
 }
 
 .spnav{
@@ -61,6 +63,8 @@ nav{
 
 input{
     padding: 5px;
+    font-size: .8rem;
+    
 }
 
 /* .lalabel, .input{
@@ -87,4 +91,37 @@ tr{
     background-color: rgba(255, 0, 0, 0.518);
     padding: 7px 12px;
     max-width: 394px;
+}
+#submit{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 390px) {
+
+  .h1nav{
+      font-size: 1.5rem;
+  }
+
+ 
+
+
+.label{
+    font-size: 4.2vw;
+}
+.error{
+   
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.518);
+    padding: 7px 12px;
+    max-width: 394px;
+    font-size: .8rem;
+}
+input{
+    padding: 3px;
+    font-size: .5rem;
+    
+}
+#submit{
+    font-size: .6rem;
+}
 }
