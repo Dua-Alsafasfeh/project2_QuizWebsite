@@ -60,7 +60,7 @@ nav{
     justify-content: space-around;
 }
 button{
-    font-size: 18px;
+    font-size: 1.3em;
     padding: 10px 3em;
     padding-bottom: 8px;
     color: #2C3377;
@@ -321,8 +321,9 @@ footer{
 
 .infoo1{
     color: white;
-    display: flex;
-    justify-content: space-around;
+    display: block;
+    text-align: center;
+    /* justify-content: space-around; */
     font-size: 30px;
     margin: 0;
 }
@@ -339,3 +340,56 @@ footer{
     margin-left: 10%;
 }
 /* ..............................media Query.................. */
+@media (max-width:1313px){
+    .main1ch{ margin:inherit;}
+}
+@media (max-width:1203px){
+    .btn{ width:60%;}
+}
+@media (max-width:1010px){
+    .btn{ width:75%;}
+}
+@media (max-width:822px){
+    .btn{ width:100%; }
+    .footer{display: block;}
+    .father{ justify-content: space-between; font-size: smaller; font-weight: bolder; margin-left: auto;}
+    .h2quiz{ margin-left: 4.5em;}
+}
+@media (max-width:770px){
+    .main1{ background-image: none; background-color: #F7E2E2; }
+    .main1ch{ width: auto;}
+    .btn{ width:90%;}
+    .h2quiz{ margin-left: 5.5em;}
+}
+@media (max-width:690px){
+    .h2quiz{margin-left: 3.5em;}
+    .father{ display: flex; flex-direction: column;}
+    .h2footer{ font-size: initial;}
+    .bahaa{ display: inline-flex; justify-content: space-between; }
+    .dua{ display: inline-flex; justify-content: space-between;}
+    .majd{ display: inline-flex; justify-content: space-between;}
+}
+@media (max-width:525px){
+    .btn{ display: grid; font-size: medium;}
+    .btn1{ margin-bottom: 1em;}
+    .h2quiz{margin-left: 2.5em;}
+    .h2footer{ font-size:1.3em;}
+    .bahaa{display: block; font-size:1.5em;}
+    .dua{display: block; font-size:1.5em;}
+    .majd{display: block; font-size:1.5em;}
+    .main1 { height: auto;}
+}
+@media (max-width:400px){
+    .h2quiz{ margin-left: 2em;}
+    .h1main{ font-size: 1.5em;}
+    .pmain { font-size: 1.3em;}
+    .main1 { height: auto;}
+}
+@media (max-width:340px){
+    .h2quiz{margin-left: 1.5em;}
+}
+@media (max-width:300px){
+    .h2quiz{margin-left: 1em;}
+}
+
+
