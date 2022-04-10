@@ -118,8 +118,11 @@ tr{
 }
 input{
     padding: 3px;
-    font-size: .5rem;
+    font-size: .6rem;
     
+}
+.table{
+    padding: 0;
 }
 #submit{
     font-size: .6rem;

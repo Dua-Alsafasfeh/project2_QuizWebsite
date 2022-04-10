@@ -163,7 +163,7 @@ border: 0;
     padding-bottom: 8px;
     color: white;
     border-radius: 10px;
-    margin-left: 15em;
+    /* margin-left: 15em; */
     cursor: pointer;
     border: 0;
 }
@@ -172,11 +172,8 @@ border: 0;
     color:#008891 ;
     border: 1px solid #008891;
 }
-#position{
-    font-size: 1em;
-}
 
-/*..........................footer...............................*/
+/*.........................................................*/
 
 footer{
     background-color: #34495E;
@@ -213,33 +210,8 @@ footer{
     color:white;
     
 }
-.infoo{
-    color: white;
-    text-align: center;
-}
 
-.infoo1{
-    color: white;
-    display: block;
-    text-align: center;
-    /* justify-content: space-around; */
-    font-size: 30px;
-    margin: 0;
-}
-
-.infoo1 a{
-    color: white;
-}
-
-.father{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-left: 10%;
-}
-
-/****************************pop up***********************************************/
+/***************************************************************************/
 
 .pop{
     display: none;
@@ -322,6 +294,35 @@ footer{
     
 }
 
+#position{
+    font-size: 1em;
+}
+
+.infoo{
+    color: white;
+    text-align: center;
+}
+
+.infoo1{
+    color: white;
+    display: block;
+    text-align: center;
+    /* justify-content: space-around; */
+    font-size: 30px;
+    margin: 0;
+}
+
+.infoo1 a{
+    color: white;
+}
+
+.father{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 10%;
+}
 /* ..............................media Query.................. */
 /* *****************main1************ */
 @media (max-width:1313px){
@@ -377,7 +378,7 @@ footer{
 }
 /* ********************main2***************** */
 @media (max-width:1190px){
-    .btnstartquiz{ margin-left: 20%;}
+    /* .btnstartquiz{ margin-left: 20%;} */
 }
 @media (max-width:1000px){
     .skilldiv{ width: 80%}
@@ -386,7 +387,7 @@ footer{
     .main2{ background-image: none; background-color: #F7E2E2; }
     .main2ch{ width: auto;}
     .skilldiv{ width: 100%;} 
-    .btnstartquiz{ margin-left: 15em;}
+    /* .btnstartquiz{ margin-left: 15em;} */
 }
 @media (max-width:760px){
     .btnstartquiz{ font-size: 1.4em;}
@@ -407,10 +408,15 @@ footer{
 }
 @media (max-width:437px){
     .btnstartquiz{ margin: auto; margin-top: 1em;}
+    #flot{
+        display: none;
+    }
+
+    .div1 h1{
+        margin: auto;
+    }
 }
 @media (max-width:389px){
     .btnstartquiz{ margin: auto;margin-top: 1em;}
     .div2 ,.footer{ font-size: smaller;}
 }
-
-

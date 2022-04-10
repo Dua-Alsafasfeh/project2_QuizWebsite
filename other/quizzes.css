@@ -84,10 +84,11 @@ nav{
 }
 
 .radioin{
-    background-color: #215fa7;
+    /* background-color: #215fa7; */
+    background-color: unset;
     padding: 10px;
     border-radius: 100%;
-    display: none;
+    /* display: none; */
 }
 
 .progresscon{
@@ -146,4 +147,36 @@ button{
 
 button:hover{
     background-color: #38628b;
+}
+
+@media screen and (max-width: 1079px) {
+    .quiz{
+        width: 100%;
+    }
+
+    .qhead{
+        font-size: 20px;
+    }
+
+    .question{
+        font-size: 17px;
+        padding: 10px;
+    }
+    
+    .answer{
+        font-size: 17px;
+        overflow-wrap: anywhere;
+    }
+
+    .qnum{
+        font-size: 18px;
+    }
+
+    #button{
+        font-size: 15px;
+    }
+
+    .counters {
+        width: 18%;
+    }
 }

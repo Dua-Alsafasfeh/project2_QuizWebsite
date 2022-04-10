@@ -32,6 +32,7 @@ body{
     background-color: white;
     height: 70%;
     display: none;
+    overflow: scroll;
 }
 
 .listbody{
@@ -47,6 +48,8 @@ body{
     align-items: center;
     justify-content: space-around;
     height: 20%;
+    flex-wrap: wrap;
+
 }
 
 .qt,.qf{
@@ -57,6 +60,8 @@ body{
     user-select: none;
     cursor: pointer;
     box-sizing: border-box;
+    margin-top: 7px;
+    margin-right: 5px;
 }
 
 .qt{
@@ -123,10 +128,11 @@ body{
 }
 
 .radioin{
-    background-color: #215fa7;
+    /* background-color: #215fa7; */
     padding: 10px;
     border-radius: 100%;
-    display: none;
+    /* display: none; */
+    background-color: unset;
 }
 
 .answer{
@@ -196,4 +202,28 @@ button:hover{
 
 .btns:hover::before{
     height: 1000%;
+}
+
+@media screen and (max-width: 1038px) {
+    .listhead{
+        padding: 15px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .quiz{
+        width: 100%;
+    }
+
+    .question{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .answer{
+        font-size: 18px;
+        overflow-wrap: anywhere;
+    }
 }
