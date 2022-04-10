@@ -1,4 +1,4 @@
-
+"use strict";
 document.getElementById("btn2").onclick = function(){
     location.href = "other/register.html";
 }

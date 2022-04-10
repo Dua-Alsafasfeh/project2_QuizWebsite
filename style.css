@@ -172,8 +172,11 @@ border: 0;
     color:#008891 ;
     border: 1px solid #008891;
 }
+#position{
+    font-size: 1em;
+}
 
-/*.........................................................*/
+/*..........................footer...............................*/
 
 footer{
     background-color: #34495E;
@@ -210,8 +213,33 @@ footer{
     color:white;
     
 }
+.infoo{
+    color: white;
+    text-align: center;
+}
 
-/***************************************************************************/
+.infoo1{
+    color: white;
+    display: block;
+    text-align: center;
+    /* justify-content: space-around; */
+    font-size: 30px;
+    margin: 0;
+}
+
+.infoo1 a{
+    color: white;
+}
+
+.father{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 10%;
+}
+
+/****************************pop up***********************************************/
 
 .pop{
     display: none;
@@ -294,35 +322,6 @@ footer{
     
 }
 
-#position{
-    font-size: 1em;
-}
-
-.infoo{
-    color: white;
-    text-align: center;
-}
-
-.infoo1{
-    color: white;
-    display: block;
-    text-align: center;
-    /* justify-content: space-around; */
-    font-size: 30px;
-    margin: 0;
-}
-
-.infoo1 a{
-    color: white;
-}
-
-.father{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    margin-left: 10%;
-}
 /* ..............................media Query.................. */
 /* *****************main1************ */
 @media (max-width:1313px){
